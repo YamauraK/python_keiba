@@ -85,6 +85,13 @@ def _parse_structured_block(text: str) -> Dict[str, Any]:
         raise DataValidationError("Structured data block is not valid JSON") from exc
 
 
+def _normalize_sex_category(value: str | None) -> str:
+    normalized = (value or "").strip().lower()
+    if normalized in {"male", "female", "mixed"}:
+        return normalized
+    return "mixed"
+
+
 def ingest_csv(csv_path: Path | str, db_path: Path | str | None = None) -> Tuple[int, int]:
     """Load a CSV file into the SQLite database."""
 
@@ -116,6 +123,7 @@ def ingest_csv(csv_path: Path | str, db_path: Path | str | None = None) -> Tuple
                 "num_runners": _cast_int(row, "num_runners"),
                 "track_direction": row["track_direction"].strip(),
                 "weather": row["weather"].strip(),
+                "sex_category": _normalize_sex_category(row.get("sex_category")),
             }
             entry_records.append(
                 {
@@ -137,10 +145,10 @@ def ingest_csv(csv_path: Path | str, db_path: Path | str | None = None) -> Tuple
             """
             INSERT OR REPLACE INTO races (
                 race_id, date, racecourse, distance, track_condition,
-                num_runners, track_direction, weather
+                num_runners, track_direction, weather, sex_category
             ) VALUES (
                 :race_id, :date, :racecourse, :distance, :track_condition,
-                :num_runners, :track_direction, :weather
+                :num_runners, :track_direction, :weather, :sex_category
             );
             """,
             race_records.values(),
@@ -196,6 +204,9 @@ def ingest_txt(txt_path: Path | str, db_path: Path | str | None = None) -> Tuple
                 "num_runners": int(race["num_runners"]),
                 "track_direction": str(race["track_direction"]).strip(),
                 "weather": str(race["weather"]).strip(),
+                "sex_category": _normalize_sex_category(
+                    str(race.get("sex_category")) if "sex_category" in race else None
+                ),
             }
         except KeyError as exc:
             raise DataValidationError(
@@ -245,10 +256,10 @@ def ingest_txt(txt_path: Path | str, db_path: Path | str | None = None) -> Tuple
             """
             INSERT OR REPLACE INTO races (
                 race_id, date, racecourse, distance, track_condition,
-                num_runners, track_direction, weather
+                num_runners, track_direction, weather, sex_category
             ) VALUES (
                 :race_id, :date, :racecourse, :distance, :track_condition,
-                :num_runners, :track_direction, :weather
+                :num_runners, :track_direction, :weather, :sex_category
             );
             """,
             race_records.values(),

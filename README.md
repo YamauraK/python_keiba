@@ -94,7 +94,7 @@ CSV のカラム定義は以下の通りです。
    python -m keiba.cli ingest data/2016 --no-recursive --db-path keiba.db
    ```
 
-5. 購入シミュレーションを実行します。`--horse-popularities` は出走予定馬の人気順を入力します（例: 1,2,4,6,...）。
+5. 購入シミュレーションを実行します。`--race-sex` で牡馬・牝馬・混合のどれに該当するかを指定できます。
    過去の傾向から三連複（3 頭の組み合わせ）として期待値が高い 10 点を提案します。
 
    ```bash
@@ -104,11 +104,9 @@ CSV のカラム定義は以下の通りです。
        --track-condition "良" \
        --num-runners 18 \
        --track-direction "左" \
-       --weather "晴" \
-       --horse-popularities 1 --horse-popularities 2 --horse-popularities 4 \
-       --horse-popularities 5 --horse-popularities 7 --horse-popularities 8 \
-       --horse-popularities 9 --horse-popularities 10 --horse-popularities 12 \
-       --horse-popularities 13 --db-path keiba.db
+      --weather "晴" \
+      --race-sex mixed \
+      --db-path keiba.db
    ```
 
    デフォルトでは予算 1 万円を 10 点に均等配分します。`--budget` と `--num-tickets` オプションで変更できます。
@@ -146,11 +144,8 @@ CSV のカラム定義は以下の通りです。
    ```bash
    docker run --rm -v $(pwd)/storage:/storage keiba-analytics suggest \
        --racecourse "東京" --distance 2400 --track-condition "良" \
-       --num-runners 18 --track-direction "左" --weather "晴" \
-       --horse-popularities 1 --horse-popularities 2 --horse-popularities 3 \
-       --horse-popularities 5 --horse-popularities 6 --horse-popularities 7 \
-       --horse-popularities 8 --horse-popularities 9 --horse-popularities 10 \
-       --horse-popularities 12 --db-path /storage/keiba.db
+      --num-runners 18 --track-direction "左" --weather "晴" \
+      --race-sex female --db-path /storage/keiba.db
    ```
 
    `storage` ディレクトリに SQLite データベースが保存されるので、コンテナを破棄してもデータが保持されます。
@@ -159,7 +154,7 @@ CSV のカラム定義は以下の通りです。
 
 1. ローカルで日々のレース結果を CSV にエクスポートして `data/` 以下に保存する。
 2. `ingest` コマンドで定期的に取り込むことでデータベースを更新する。
-3. レース条件と想定人気を入力して `suggest` を実行し、期待値が高い組み合わせを抽出する。
+3. レース条件と牡馬戦・牝馬戦・混合戦の別を入力して `suggest` を実行し、期待値が高い組み合わせを抽出する。
 
 将来的には機械学習モデルやより高度な指標を組み込むことも可能です。その際も SQLite にデータが蓄積されていれば柔軟に分析を追加できます。
 

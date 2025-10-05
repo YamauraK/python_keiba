@@ -3,10 +3,9 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from itertools import combinations
 from pathlib import Path
 from statistics import fmean
-from typing import Dict, Iterable, List, Optional, Sequence, Tuple
+from typing import Dict, Iterable, List, Optional, Tuple
 
 from .database import DB_PATH_DEFAULT, get_connection
 
@@ -36,6 +35,7 @@ def _build_filters(
     num_runners: Optional[int],
     track_direction: Optional[str],
     weather: Optional[str],
+    sex_category: Optional[str],
 ) -> tuple[str, List[object]]:
     clauses = ["WHERE 1=1"]
     params: List[object] = []
@@ -52,6 +52,7 @@ def _build_filters(
     add("num_runners", num_runners)
     add("track_direction", track_direction)
     add("weather", weather)
+    add("sex_category", sex_category)
 
     return "\n".join(clauses), params
 
@@ -65,6 +66,7 @@ def _fetch_trifecta_statistics(
     num_runners: Optional[int] = None,
     track_direction: Optional[str] = None,
     weather: Optional[str] = None,
+    sex_category: Optional[str] = None,
 ) -> Tuple[int, Dict[Tuple[int, int, int], Dict[str, float]]]:
     """Return hit counts and payout aggregates for 三連複 combinations.
 
@@ -81,6 +83,7 @@ def _fetch_trifecta_statistics(
         num_runners=num_runners,
         track_direction=track_direction,
         weather=weather,
+        sex_category=sex_category,
     )
 
     query = f"""
@@ -174,7 +177,7 @@ def recommend_bets(
     num_runners: Optional[int] = None,
     track_direction: Optional[str] = None,
     weather: Optional[str] = None,
-    horse_popularities: Sequence[int],
+    race_sex: Optional[str] = None,
     budget: int = 10_000,
     num_tickets: int = 10,
 ) -> List[BetRecommendation]:
@@ -184,9 +187,6 @@ def recommend_bets(
         raise ValueError("num_tickets must be positive")
     if budget <= 0:
         raise ValueError("budget must be positive")
-    if len(horse_popularities) < 3:
-        raise ValueError("三連複を検討するには最低でも 3 頭の人気順が必要です")
-
     total_races, combo_stats = _fetch_trifecta_statistics(
         db_path,
         racecourse=racecourse,
@@ -195,11 +195,12 @@ def recommend_bets(
         num_runners=num_runners,
         track_direction=track_direction,
         weather=weather,
+        sex_category=race_sex,
     )
 
-    candidate_combos = list(combinations(sorted(set(horse_popularities)), 3))
+    candidate_combos = list(combo_stats.keys())
     if not candidate_combos:
-        raise ValueError("指定された人気順では三連複の組み合わせを作成できません")
+        raise ValueError("指定条件に合致する三連複の組み合わせが見つかりませんでした")
 
     ticket_value = budget / num_tickets
 
