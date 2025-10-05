@@ -38,12 +38,11 @@ def _parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
     suggest_parser.add_argument("--track-direction", dest="track_direction", type=str, default=None)
     suggest_parser.add_argument("--weather", type=str, default=None)
     suggest_parser.add_argument(
-        "--horse-popularities",
-        dest="horse_popularities",
-        type=int,
-        nargs="+",
-        required=True,
-        help="Popularity ranks for the upcoming race",
+        "--race-sex",
+        dest="race_sex",
+        choices=["male", "female", "mixed"],
+        default="mixed",
+        help="Sex restriction for the upcoming race (male / female / mixed)",
     )
     suggest_parser.add_argument("--budget", type=int, default=10_000, help="Total budget in yen")
     suggest_parser.add_argument(
@@ -88,7 +87,7 @@ def main(argv: Optional[List[str]] = None) -> int:
             num_runners=args.num_runners,
             track_direction=args.track_direction,
             weather=args.weather,
-            horse_popularities=args.horse_popularities,
+            race_sex=args.race_sex,
             budget=args.budget,
             num_tickets=args.num_tickets,
         )

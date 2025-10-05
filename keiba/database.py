@@ -47,7 +47,8 @@ def initialize_database(db_path: Path | str | None = None) -> None:
                 track_condition TEXT,
                 num_runners INTEGER,
                 track_direction TEXT,
-                weather TEXT
+                weather TEXT,
+                sex_category TEXT DEFAULT 'mixed'
             );
 
             CREATE TABLE IF NOT EXISTS race_entries (
@@ -68,6 +69,16 @@ def initialize_database(db_path: Path | str | None = None) -> None:
             ON race_entries (race_id, horse_number);
             """
         )
+
+        # Ensure legacy databases obtain the new column without manual migration.
+        existing_columns = {
+            row[1] for row in cursor.execute("PRAGMA table_info(races)")
+        }
+        if "sex_category" not in existing_columns:
+            cursor.execute("ALTER TABLE races ADD COLUMN sex_category TEXT")
+            cursor.execute(
+                "UPDATE races SET sex_category = 'mixed' WHERE sex_category IS NULL"
+            )
 
 
 def bulk_insert(
