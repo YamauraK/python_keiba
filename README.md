@@ -88,6 +88,10 @@ CSV のカラム定義は以下の通りです。
    python -m keiba.cli ingest data/races_2024.csv --db-path keiba.db
    # または JSON ブロックを含むテキストを取り込む場合
    python -m keiba.cli ingest data/Sapporo/1-2016-1.txt --db-path keiba.db
+   # ディレクトリを指定すると配下の .csv / .txt をまとめて取り込めます
+   python -m keiba.cli ingest data/2016/Tokyo --db-path keiba.db
+   # 再帰的な走査を無効にする場合は --no-recursive を指定します
+   python -m keiba.cli ingest data/2016 --no-recursive --db-path keiba.db
    ```
 
 5. 購入シミュレーションを実行します。`--horse-popularities` は出走予定馬の人気順を入力します（例: 1,2,4,6,...）。
@@ -124,6 +128,9 @@ CSV のカラム定義は以下の通りです。
 
    docker run --rm -v $(pwd)/data:/data -v $(pwd)/storage:/storage \
        keiba-analytics ingest /data/races_2024.csv --db-path /storage/keiba.db
+   # 例: 東京競馬場のテキストデータを一括で取り込む
+   docker run --rm -v $(pwd)/data:/data -v $(pwd)/storage:/storage \
+       keiba-analytics ingest /data/2016/Tokyo --db-path /storage/keiba.db
    ```
 
 3. 予想を出す場合も同様に実行します。
