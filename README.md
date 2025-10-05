@@ -4,7 +4,12 @@
 
 ## データファイルのフォーマット
 
-本ツールは以下のカラムを持つ CSV ファイルを想定しています。1 行が 1 頭の出走馬に対応し、同じ `race_id` の行が 1 つのレースを構成します。
+本ツールは以下 2 種類のデータ形式を取り込めます。
+
+1. **CSV ファイル** – 1 行が 1 頭の出走馬に対応し、同じ `race_id` の行が 1 つのレースを構成します。
+2. **テキストファイル (`.txt`)** – 任意の文章の末尾に `### structured-data:start` 〜 `### structured-data:end` に挟まれた JSON ブロックを埋め込みます。JSON には複数レース分のメタデータと出走馬情報をまとめて記述できます。
+
+CSV のカラム定義は以下の通りです。
 
 | カラム名 | 説明 |
 | --- | --- |
@@ -25,6 +30,39 @@
 | `return_win` | 単勝 100 円購入時の払戻金（外れた場合は 0） |
 | `return_place` | 複勝 100 円購入時の払戻金（外れた場合は 0） |
 
+テキストファイル形式では、`structured-data` ブロック内に以下のような JSON を記述します。
+
+```json
+{
+  "races": [
+    {
+      "race_id": "2016-07-30-SAP-01",
+      "date": "2016-07-30",
+      "racecourse": "札幌",
+      "distance": 1700,
+      "track_condition": "良",
+      "num_runners": 12,
+      "track_direction": "右",
+      "weather": "晴",
+      "entries": [
+        {
+          "horse_number": 1,
+          "horse_name": "馬01-01",
+          "popularity": 3,
+          "finish_position": 4,
+          "odds_win": 4.5,
+          "odds_place": 2.2,
+          "return_win": 0.0,
+          "return_place": 0.0
+        }
+      ]
+    }
+  ]
+}
+```
+
+`entries` 配列の要素数は `num_runners` と一致させてください。
+
 ## ローカル環境での使い方
 
 1. Python 3.11 以上をインストールします。
@@ -44,10 +82,12 @@
    python -m keiba.cli init-db --db-path keiba.db
    ```
 
-4. CSV を取り込んでデータを蓄積します。
+4. データファイル（CSV または `.txt`）を取り込んでデータを蓄積します。
 
    ```bash
    python -m keiba.cli ingest data/races_2024.csv --db-path keiba.db
+   # または JSON ブロックを含むテキストを取り込む場合
+   python -m keiba.cli ingest data/Sapporo/1-2016-1.txt --db-path keiba.db
    ```
 
 5. 購入シミュレーションを実行します。`--horse-popularities` は出走予定馬の人気順を入力します（例: 1,2,4,6,...）。
