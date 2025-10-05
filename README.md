@@ -95,6 +95,7 @@ CSV のカラム定義は以下の通りです。
    ```
 
 5. 購入シミュレーションを実行します。`--horse-popularities` は出走予定馬の人気順を入力します（例: 1,2,4,6,...）。
+   過去の傾向から三連複（3 頭の組み合わせ）として期待値が高い 10 点を提案します。
 
    ```bash
    python -m keiba.cli suggest \
@@ -111,6 +112,13 @@ CSV のカラム定義は以下の通りです。
    ```
 
    デフォルトでは予算 1 万円を 10 点に均等配分します。`--budget` と `--num-tickets` オプションで変更できます。
+   出力例:
+
+   ```
+   Combination 1-2-4: bet 1000円, hit rate 8.5% -> expected return 920円
+   Combination 1-3-4: bet 1000円, hit rate 7.9% -> expected return 910円
+   ...
+   ```
 
 ## Docker での実行
 
