@@ -1273,4 +1273,2074 @@ $普 通馬 "馬
 総入場人員 36，073名 (有料入場人員 3，726名)
 $ ワイド【拡大馬連】 $3連複 $3連単 #5重勝
 15，05，323，50円
- 
+
+### structured-data:start
+{
+  "races": [
+    {
+      "race_id": "2016-06-12-TOK-01",
+      "date": "2016-06-12",
+      "racecourse": "東京",
+      "distance": 1400,
+      "track_condition": "良",
+      "num_runners": 16,
+      "track_direction": "左",
+      "weather": "晴",
+      "entries": [
+        {
+          "horse_number": 1,
+          "horse_name": "馬01-01",
+          "popularity": 1,
+          "finish_position": 1,
+          "odds_win": 1.9,
+          "odds_place": 1.1,
+          "return_win": 150.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 2,
+          "horse_name": "馬01-02",
+          "popularity": 2,
+          "finish_position": 4,
+          "odds_win": 2.3,
+          "odds_place": 1.4,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 3,
+          "horse_name": "馬01-03",
+          "popularity": 3,
+          "finish_position": 7,
+          "odds_win": 2.7,
+          "odds_place": 1.8,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 4,
+          "horse_name": "馬01-04",
+          "popularity": 4,
+          "finish_position": 10,
+          "odds_win": 3.1,
+          "odds_place": 2.0,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 5,
+          "horse_name": "馬01-05",
+          "popularity": 5,
+          "finish_position": 13,
+          "odds_win": 3.5,
+          "odds_place": 2.3,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 6,
+          "horse_name": "馬01-06",
+          "popularity": 6,
+          "finish_position": 16,
+          "odds_win": 3.9,
+          "odds_place": 2.6,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 7,
+          "horse_name": "馬01-07",
+          "popularity": 7,
+          "finish_position": 3,
+          "odds_win": 4.3,
+          "odds_place": 1.8,
+          "return_win": 0.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 8,
+          "horse_name": "馬01-08",
+          "popularity": 8,
+          "finish_position": 6,
+          "odds_win": 4.7,
+          "odds_place": 2.0,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 9,
+          "horse_name": "馬01-09",
+          "popularity": 9,
+          "finish_position": 9,
+          "odds_win": 5.1,
+          "odds_place": 2.3,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 10,
+          "horse_name": "馬01-10",
+          "popularity": 10,
+          "finish_position": 12,
+          "odds_win": 5.5,
+          "odds_place": 2.6,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 11,
+          "horse_name": "馬01-11",
+          "popularity": 11,
+          "finish_position": 15,
+          "odds_win": 5.9,
+          "odds_place": 3.0,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 12,
+          "horse_name": "馬01-12",
+          "popularity": 12,
+          "finish_position": 2,
+          "odds_win": 6.3,
+          "odds_place": 2.0,
+          "return_win": 0.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 13,
+          "horse_name": "馬01-13",
+          "popularity": 13,
+          "finish_position": 5,
+          "odds_win": 6.7,
+          "odds_place": 2.3,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 14,
+          "horse_name": "馬01-14",
+          "popularity": 14,
+          "finish_position": 8,
+          "odds_win": 7.1,
+          "odds_place": 2.6,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 15,
+          "horse_name": "馬01-15",
+          "popularity": 15,
+          "finish_position": 11,
+          "odds_win": 7.5,
+          "odds_place": 3.0,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 16,
+          "horse_name": "馬01-16",
+          "popularity": 16,
+          "finish_position": 14,
+          "odds_win": 7.9,
+          "odds_place": 3.2,
+          "return_win": 0.0,
+          "return_place": 0.0
+        }
+      ]
+    },
+    {
+      "race_id": "2016-06-12-TOK-02",
+      "date": "2016-06-12",
+      "racecourse": "東京",
+      "distance": 1600,
+      "track_condition": "良",
+      "num_runners": 16,
+      "track_direction": "左",
+      "weather": "晴",
+      "entries": [
+        {
+          "horse_number": 1,
+          "horse_name": "馬02-01",
+          "popularity": 2,
+          "finish_position": 2,
+          "odds_win": 2.3,
+          "odds_place": 1.3,
+          "return_win": 0.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 2,
+          "horse_name": "馬02-02",
+          "popularity": 3,
+          "finish_position": 5,
+          "odds_win": 2.7,
+          "odds_place": 1.6,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 3,
+          "horse_name": "馬02-03",
+          "popularity": 4,
+          "finish_position": 8,
+          "odds_win": 3.1,
+          "odds_place": 1.9,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 4,
+          "horse_name": "馬02-04",
+          "popularity": 5,
+          "finish_position": 11,
+          "odds_win": 3.5,
+          "odds_place": 2.2,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 5,
+          "horse_name": "馬02-05",
+          "popularity": 6,
+          "finish_position": 14,
+          "odds_win": 3.9,
+          "odds_place": 2.5,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 6,
+          "horse_name": "馬02-06",
+          "popularity": 7,
+          "finish_position": 1,
+          "odds_win": 4.3,
+          "odds_place": 1.6,
+          "return_win": 150.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 7,
+          "horse_name": "馬02-07",
+          "popularity": 8,
+          "finish_position": 4,
+          "odds_win": 4.7,
+          "odds_place": 1.9,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 8,
+          "horse_name": "馬02-08",
+          "popularity": 9,
+          "finish_position": 7,
+          "odds_win": 5.1,
+          "odds_place": 2.2,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 9,
+          "horse_name": "馬02-09",
+          "popularity": 10,
+          "finish_position": 10,
+          "odds_win": 5.5,
+          "odds_place": 2.5,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 10,
+          "horse_name": "馬02-10",
+          "popularity": 11,
+          "finish_position": 13,
+          "odds_win": 5.9,
+          "odds_place": 2.8,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 11,
+          "horse_name": "馬02-11",
+          "popularity": 12,
+          "finish_position": 16,
+          "odds_win": 6.3,
+          "odds_place": 3.1,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 12,
+          "horse_name": "馬02-12",
+          "popularity": 13,
+          "finish_position": 3,
+          "odds_win": 6.7,
+          "odds_place": 2.2,
+          "return_win": 0.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 13,
+          "horse_name": "馬02-13",
+          "popularity": 14,
+          "finish_position": 6,
+          "odds_win": 7.1,
+          "odds_place": 2.5,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 14,
+          "horse_name": "馬02-14",
+          "popularity": 15,
+          "finish_position": 9,
+          "odds_win": 7.5,
+          "odds_place": 2.8,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 15,
+          "horse_name": "馬02-15",
+          "popularity": 16,
+          "finish_position": 12,
+          "odds_win": 7.9,
+          "odds_place": 3.1,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 16,
+          "horse_name": "馬02-16",
+          "popularity": 1,
+          "finish_position": 15,
+          "odds_win": 1.9,
+          "odds_place": 2.2,
+          "return_win": 0.0,
+          "return_place": 0.0
+        }
+      ]
+    },
+    {
+      "race_id": "2016-06-12-TOK-03",
+      "date": "2016-06-12",
+      "racecourse": "東京",
+      "distance": 1800,
+      "track_condition": "良",
+      "num_runners": 16,
+      "track_direction": "左",
+      "weather": "晴",
+      "entries": [
+        {
+          "horse_number": 1,
+          "horse_name": "馬03-01",
+          "popularity": 3,
+          "finish_position": 3,
+          "odds_win": 2.7,
+          "odds_place": 1.4,
+          "return_win": 0.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 2,
+          "horse_name": "馬03-02",
+          "popularity": 4,
+          "finish_position": 6,
+          "odds_win": 3.1,
+          "odds_place": 1.8,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 3,
+          "horse_name": "馬03-03",
+          "popularity": 5,
+          "finish_position": 9,
+          "odds_win": 3.5,
+          "odds_place": 2.0,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 4,
+          "horse_name": "馬03-04",
+          "popularity": 6,
+          "finish_position": 12,
+          "odds_win": 3.9,
+          "odds_place": 2.3,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 5,
+          "horse_name": "馬03-05",
+          "popularity": 7,
+          "finish_position": 15,
+          "odds_win": 4.3,
+          "odds_place": 2.6,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 6,
+          "horse_name": "馬03-06",
+          "popularity": 8,
+          "finish_position": 2,
+          "odds_win": 4.7,
+          "odds_place": 1.8,
+          "return_win": 0.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 7,
+          "horse_name": "馬03-07",
+          "popularity": 9,
+          "finish_position": 5,
+          "odds_win": 5.1,
+          "odds_place": 2.0,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 8,
+          "horse_name": "馬03-08",
+          "popularity": 10,
+          "finish_position": 8,
+          "odds_win": 5.5,
+          "odds_place": 2.3,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 9,
+          "horse_name": "馬03-09",
+          "popularity": 11,
+          "finish_position": 11,
+          "odds_win": 5.9,
+          "odds_place": 2.6,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 10,
+          "horse_name": "馬03-10",
+          "popularity": 12,
+          "finish_position": 14,
+          "odds_win": 6.3,
+          "odds_place": 3.0,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 11,
+          "horse_name": "馬03-11",
+          "popularity": 13,
+          "finish_position": 1,
+          "odds_win": 6.7,
+          "odds_place": 2.0,
+          "return_win": 150.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 12,
+          "horse_name": "馬03-12",
+          "popularity": 14,
+          "finish_position": 4,
+          "odds_win": 7.1,
+          "odds_place": 2.3,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 13,
+          "horse_name": "馬03-13",
+          "popularity": 15,
+          "finish_position": 7,
+          "odds_win": 7.5,
+          "odds_place": 2.6,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 14,
+          "horse_name": "馬03-14",
+          "popularity": 16,
+          "finish_position": 10,
+          "odds_win": 7.9,
+          "odds_place": 3.0,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 15,
+          "horse_name": "馬03-15",
+          "popularity": 1,
+          "finish_position": 13,
+          "odds_win": 1.9,
+          "odds_place": 2.0,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 16,
+          "horse_name": "馬03-16",
+          "popularity": 2,
+          "finish_position": 16,
+          "odds_win": 2.3,
+          "odds_place": 2.3,
+          "return_win": 0.0,
+          "return_place": 0.0
+        }
+      ]
+    },
+    {
+      "race_id": "2016-06-12-TOK-04",
+      "date": "2016-06-12",
+      "racecourse": "東京",
+      "distance": 2000,
+      "track_condition": "良",
+      "num_runners": 16,
+      "track_direction": "左",
+      "weather": "晴",
+      "entries": [
+        {
+          "horse_number": 1,
+          "horse_name": "馬04-01",
+          "popularity": 4,
+          "finish_position": 4,
+          "odds_win": 3.1,
+          "odds_place": 1.6,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 2,
+          "horse_name": "馬04-02",
+          "popularity": 5,
+          "finish_position": 7,
+          "odds_win": 3.5,
+          "odds_place": 1.9,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 3,
+          "horse_name": "馬04-03",
+          "popularity": 6,
+          "finish_position": 10,
+          "odds_win": 3.9,
+          "odds_place": 2.2,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 4,
+          "horse_name": "馬04-04",
+          "popularity": 7,
+          "finish_position": 13,
+          "odds_win": 4.3,
+          "odds_place": 2.5,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 5,
+          "horse_name": "馬04-05",
+          "popularity": 8,
+          "finish_position": 16,
+          "odds_win": 4.7,
+          "odds_place": 2.8,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 6,
+          "horse_name": "馬04-06",
+          "popularity": 9,
+          "finish_position": 3,
+          "odds_win": 5.1,
+          "odds_place": 1.9,
+          "return_win": 0.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 7,
+          "horse_name": "馬04-07",
+          "popularity": 10,
+          "finish_position": 6,
+          "odds_win": 5.5,
+          "odds_place": 2.2,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 8,
+          "horse_name": "馬04-08",
+          "popularity": 11,
+          "finish_position": 9,
+          "odds_win": 5.9,
+          "odds_place": 2.5,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 9,
+          "horse_name": "馬04-09",
+          "popularity": 12,
+          "finish_position": 12,
+          "odds_win": 6.3,
+          "odds_place": 2.8,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 10,
+          "horse_name": "馬04-10",
+          "popularity": 13,
+          "finish_position": 15,
+          "odds_win": 6.7,
+          "odds_place": 3.1,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 11,
+          "horse_name": "馬04-11",
+          "popularity": 14,
+          "finish_position": 2,
+          "odds_win": 7.1,
+          "odds_place": 2.2,
+          "return_win": 0.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 12,
+          "horse_name": "馬04-12",
+          "popularity": 15,
+          "finish_position": 5,
+          "odds_win": 7.5,
+          "odds_place": 2.5,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 13,
+          "horse_name": "馬04-13",
+          "popularity": 16,
+          "finish_position": 8,
+          "odds_win": 7.9,
+          "odds_place": 2.8,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 14,
+          "horse_name": "馬04-14",
+          "popularity": 1,
+          "finish_position": 11,
+          "odds_win": 1.9,
+          "odds_place": 1.9,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 15,
+          "horse_name": "馬04-15",
+          "popularity": 2,
+          "finish_position": 14,
+          "odds_win": 2.3,
+          "odds_place": 2.2,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 16,
+          "horse_name": "馬04-16",
+          "popularity": 3,
+          "finish_position": 1,
+          "odds_win": 2.7,
+          "odds_place": 1.3,
+          "return_win": 150.0,
+          "return_place": 110.0
+        }
+      ]
+    },
+    {
+      "race_id": "2016-06-12-TOK-05",
+      "date": "2016-06-12",
+      "racecourse": "東京",
+      "distance": 2200,
+      "track_condition": "良",
+      "num_runners": 16,
+      "track_direction": "左",
+      "weather": "晴",
+      "entries": [
+        {
+          "horse_number": 1,
+          "horse_name": "馬05-01",
+          "popularity": 5,
+          "finish_position": 5,
+          "odds_win": 3.5,
+          "odds_place": 1.8,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 2,
+          "horse_name": "馬05-02",
+          "popularity": 6,
+          "finish_position": 8,
+          "odds_win": 3.9,
+          "odds_place": 2.0,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 3,
+          "horse_name": "馬05-03",
+          "popularity": 7,
+          "finish_position": 11,
+          "odds_win": 4.3,
+          "odds_place": 2.3,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 4,
+          "horse_name": "馬05-04",
+          "popularity": 8,
+          "finish_position": 14,
+          "odds_win": 4.7,
+          "odds_place": 2.6,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 5,
+          "horse_name": "馬05-05",
+          "popularity": 9,
+          "finish_position": 1,
+          "odds_win": 5.1,
+          "odds_place": 1.8,
+          "return_win": 150.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 6,
+          "horse_name": "馬05-06",
+          "popularity": 10,
+          "finish_position": 4,
+          "odds_win": 5.5,
+          "odds_place": 2.0,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 7,
+          "horse_name": "馬05-07",
+          "popularity": 11,
+          "finish_position": 7,
+          "odds_win": 5.9,
+          "odds_place": 2.3,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 8,
+          "horse_name": "馬05-08",
+          "popularity": 12,
+          "finish_position": 10,
+          "odds_win": 6.3,
+          "odds_place": 2.6,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 9,
+          "horse_name": "馬05-09",
+          "popularity": 13,
+          "finish_position": 13,
+          "odds_win": 6.7,
+          "odds_place": 3.0,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 10,
+          "horse_name": "馬05-10",
+          "popularity": 14,
+          "finish_position": 16,
+          "odds_win": 7.1,
+          "odds_place": 3.2,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 11,
+          "horse_name": "馬05-11",
+          "popularity": 15,
+          "finish_position": 3,
+          "odds_win": 7.5,
+          "odds_place": 2.3,
+          "return_win": 0.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 12,
+          "horse_name": "馬05-12",
+          "popularity": 16,
+          "finish_position": 6,
+          "odds_win": 7.9,
+          "odds_place": 2.6,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 13,
+          "horse_name": "馬05-13",
+          "popularity": 1,
+          "finish_position": 9,
+          "odds_win": 1.9,
+          "odds_place": 1.8,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 14,
+          "horse_name": "馬05-14",
+          "popularity": 2,
+          "finish_position": 12,
+          "odds_win": 2.3,
+          "odds_place": 2.0,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 15,
+          "horse_name": "馬05-15",
+          "popularity": 3,
+          "finish_position": 15,
+          "odds_win": 2.7,
+          "odds_place": 2.3,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 16,
+          "horse_name": "馬05-16",
+          "popularity": 4,
+          "finish_position": 2,
+          "odds_win": 3.1,
+          "odds_place": 1.4,
+          "return_win": 0.0,
+          "return_place": 110.0
+        }
+      ]
+    },
+    {
+      "race_id": "2016-06-12-TOK-06",
+      "date": "2016-06-12",
+      "racecourse": "東京",
+      "distance": 2400,
+      "track_condition": "良",
+      "num_runners": 16,
+      "track_direction": "左",
+      "weather": "晴",
+      "entries": [
+        {
+          "horse_number": 1,
+          "horse_name": "馬06-01",
+          "popularity": 6,
+          "finish_position": 6,
+          "odds_win": 3.9,
+          "odds_place": 1.9,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 2,
+          "horse_name": "馬06-02",
+          "popularity": 7,
+          "finish_position": 9,
+          "odds_win": 4.3,
+          "odds_place": 2.2,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 3,
+          "horse_name": "馬06-03",
+          "popularity": 8,
+          "finish_position": 12,
+          "odds_win": 4.7,
+          "odds_place": 2.5,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 4,
+          "horse_name": "馬06-04",
+          "popularity": 9,
+          "finish_position": 15,
+          "odds_win": 5.1,
+          "odds_place": 2.8,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 5,
+          "horse_name": "馬06-05",
+          "popularity": 10,
+          "finish_position": 2,
+          "odds_win": 5.5,
+          "odds_place": 1.9,
+          "return_win": 0.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 6,
+          "horse_name": "馬06-06",
+          "popularity": 11,
+          "finish_position": 5,
+          "odds_win": 5.9,
+          "odds_place": 2.2,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 7,
+          "horse_name": "馬06-07",
+          "popularity": 12,
+          "finish_position": 8,
+          "odds_win": 6.3,
+          "odds_place": 2.5,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 8,
+          "horse_name": "馬06-08",
+          "popularity": 13,
+          "finish_position": 11,
+          "odds_win": 6.7,
+          "odds_place": 2.8,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 9,
+          "horse_name": "馬06-09",
+          "popularity": 14,
+          "finish_position": 14,
+          "odds_win": 7.1,
+          "odds_place": 3.1,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 10,
+          "horse_name": "馬06-10",
+          "popularity": 15,
+          "finish_position": 1,
+          "odds_win": 7.5,
+          "odds_place": 2.2,
+          "return_win": 150.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 11,
+          "horse_name": "馬06-11",
+          "popularity": 16,
+          "finish_position": 4,
+          "odds_win": 7.9,
+          "odds_place": 2.5,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 12,
+          "horse_name": "馬06-12",
+          "popularity": 1,
+          "finish_position": 7,
+          "odds_win": 1.9,
+          "odds_place": 1.6,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 13,
+          "horse_name": "馬06-13",
+          "popularity": 2,
+          "finish_position": 10,
+          "odds_win": 2.3,
+          "odds_place": 1.9,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 14,
+          "horse_name": "馬06-14",
+          "popularity": 3,
+          "finish_position": 13,
+          "odds_win": 2.7,
+          "odds_place": 2.2,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 15,
+          "horse_name": "馬06-15",
+          "popularity": 4,
+          "finish_position": 16,
+          "odds_win": 3.1,
+          "odds_place": 2.5,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 16,
+          "horse_name": "馬06-16",
+          "popularity": 5,
+          "finish_position": 3,
+          "odds_win": 3.5,
+          "odds_place": 1.6,
+          "return_win": 0.0,
+          "return_place": 110.0
+        }
+      ]
+    },
+    {
+      "race_id": "2016-06-12-TOK-07",
+      "date": "2016-06-12",
+      "racecourse": "東京",
+      "distance": 1200,
+      "track_condition": "良",
+      "num_runners": 16,
+      "track_direction": "左",
+      "weather": "晴",
+      "entries": [
+        {
+          "horse_number": 1,
+          "horse_name": "馬07-01",
+          "popularity": 7,
+          "finish_position": 7,
+          "odds_win": 4.3,
+          "odds_place": 2.0,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 2,
+          "horse_name": "馬07-02",
+          "popularity": 8,
+          "finish_position": 10,
+          "odds_win": 4.7,
+          "odds_place": 2.3,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 3,
+          "horse_name": "馬07-03",
+          "popularity": 9,
+          "finish_position": 13,
+          "odds_win": 5.1,
+          "odds_place": 2.6,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 4,
+          "horse_name": "馬07-04",
+          "popularity": 10,
+          "finish_position": 16,
+          "odds_win": 5.5,
+          "odds_place": 3.0,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 5,
+          "horse_name": "馬07-05",
+          "popularity": 11,
+          "finish_position": 3,
+          "odds_win": 5.9,
+          "odds_place": 2.0,
+          "return_win": 0.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 6,
+          "horse_name": "馬07-06",
+          "popularity": 12,
+          "finish_position": 6,
+          "odds_win": 6.3,
+          "odds_place": 2.3,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 7,
+          "horse_name": "馬07-07",
+          "popularity": 13,
+          "finish_position": 9,
+          "odds_win": 6.7,
+          "odds_place": 2.6,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 8,
+          "horse_name": "馬07-08",
+          "popularity": 14,
+          "finish_position": 12,
+          "odds_win": 7.1,
+          "odds_place": 3.0,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 9,
+          "horse_name": "馬07-09",
+          "popularity": 15,
+          "finish_position": 15,
+          "odds_win": 7.5,
+          "odds_place": 3.2,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 10,
+          "horse_name": "馬07-10",
+          "popularity": 16,
+          "finish_position": 2,
+          "odds_win": 7.9,
+          "odds_place": 2.3,
+          "return_win": 0.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 11,
+          "horse_name": "馬07-11",
+          "popularity": 1,
+          "finish_position": 5,
+          "odds_win": 1.9,
+          "odds_place": 1.4,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 12,
+          "horse_name": "馬07-12",
+          "popularity": 2,
+          "finish_position": 8,
+          "odds_win": 2.3,
+          "odds_place": 1.8,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 13,
+          "horse_name": "馬07-13",
+          "popularity": 3,
+          "finish_position": 11,
+          "odds_win": 2.7,
+          "odds_place": 2.0,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 14,
+          "horse_name": "馬07-14",
+          "popularity": 4,
+          "finish_position": 14,
+          "odds_win": 3.1,
+          "odds_place": 2.3,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 15,
+          "horse_name": "馬07-15",
+          "popularity": 5,
+          "finish_position": 1,
+          "odds_win": 3.5,
+          "odds_place": 1.4,
+          "return_win": 150.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 16,
+          "horse_name": "馬07-16",
+          "popularity": 6,
+          "finish_position": 4,
+          "odds_win": 3.9,
+          "odds_place": 1.8,
+          "return_win": 0.0,
+          "return_place": 0.0
+        }
+      ]
+    },
+    {
+      "race_id": "2016-06-12-TOK-08",
+      "date": "2016-06-12",
+      "racecourse": "東京",
+      "distance": 1400,
+      "track_condition": "良",
+      "num_runners": 16,
+      "track_direction": "左",
+      "weather": "晴",
+      "entries": [
+        {
+          "horse_number": 1,
+          "horse_name": "馬08-01",
+          "popularity": 8,
+          "finish_position": 8,
+          "odds_win": 4.7,
+          "odds_place": 2.2,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 2,
+          "horse_name": "馬08-02",
+          "popularity": 9,
+          "finish_position": 11,
+          "odds_win": 5.1,
+          "odds_place": 2.5,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 3,
+          "horse_name": "馬08-03",
+          "popularity": 10,
+          "finish_position": 14,
+          "odds_win": 5.5,
+          "odds_place": 2.8,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 4,
+          "horse_name": "馬08-04",
+          "popularity": 11,
+          "finish_position": 1,
+          "odds_win": 5.9,
+          "odds_place": 1.9,
+          "return_win": 150.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 5,
+          "horse_name": "馬08-05",
+          "popularity": 12,
+          "finish_position": 4,
+          "odds_win": 6.3,
+          "odds_place": 2.2,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 6,
+          "horse_name": "馬08-06",
+          "popularity": 13,
+          "finish_position": 7,
+          "odds_win": 6.7,
+          "odds_place": 2.5,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 7,
+          "horse_name": "馬08-07",
+          "popularity": 14,
+          "finish_position": 10,
+          "odds_win": 7.1,
+          "odds_place": 2.8,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 8,
+          "horse_name": "馬08-08",
+          "popularity": 15,
+          "finish_position": 13,
+          "odds_win": 7.5,
+          "odds_place": 3.1,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 9,
+          "horse_name": "馬08-09",
+          "popularity": 16,
+          "finish_position": 16,
+          "odds_win": 7.9,
+          "odds_place": 3.4,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 10,
+          "horse_name": "馬08-10",
+          "popularity": 1,
+          "finish_position": 3,
+          "odds_win": 1.9,
+          "odds_place": 1.3,
+          "return_win": 0.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 11,
+          "horse_name": "馬08-11",
+          "popularity": 2,
+          "finish_position": 6,
+          "odds_win": 2.3,
+          "odds_place": 1.6,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 12,
+          "horse_name": "馬08-12",
+          "popularity": 3,
+          "finish_position": 9,
+          "odds_win": 2.7,
+          "odds_place": 1.9,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 13,
+          "horse_name": "馬08-13",
+          "popularity": 4,
+          "finish_position": 12,
+          "odds_win": 3.1,
+          "odds_place": 2.2,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 14,
+          "horse_name": "馬08-14",
+          "popularity": 5,
+          "finish_position": 15,
+          "odds_win": 3.5,
+          "odds_place": 2.5,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 15,
+          "horse_name": "馬08-15",
+          "popularity": 6,
+          "finish_position": 2,
+          "odds_win": 3.9,
+          "odds_place": 1.6,
+          "return_win": 0.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 16,
+          "horse_name": "馬08-16",
+          "popularity": 7,
+          "finish_position": 5,
+          "odds_win": 4.3,
+          "odds_place": 1.9,
+          "return_win": 0.0,
+          "return_place": 0.0
+        }
+      ]
+    },
+    {
+      "race_id": "2016-06-12-TOK-09",
+      "date": "2016-06-12",
+      "racecourse": "東京",
+      "distance": 1800,
+      "track_condition": "良",
+      "num_runners": 16,
+      "track_direction": "左",
+      "weather": "晴",
+      "entries": [
+        {
+          "horse_number": 1,
+          "horse_name": "馬09-01",
+          "popularity": 9,
+          "finish_position": 9,
+          "odds_win": 5.1,
+          "odds_place": 2.3,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 2,
+          "horse_name": "馬09-02",
+          "popularity": 10,
+          "finish_position": 12,
+          "odds_win": 5.5,
+          "odds_place": 2.6,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 3,
+          "horse_name": "馬09-03",
+          "popularity": 11,
+          "finish_position": 15,
+          "odds_win": 5.9,
+          "odds_place": 3.0,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 4,
+          "horse_name": "馬09-04",
+          "popularity": 12,
+          "finish_position": 2,
+          "odds_win": 6.3,
+          "odds_place": 2.0,
+          "return_win": 0.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 5,
+          "horse_name": "馬09-05",
+          "popularity": 13,
+          "finish_position": 5,
+          "odds_win": 6.7,
+          "odds_place": 2.3,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 6,
+          "horse_name": "馬09-06",
+          "popularity": 14,
+          "finish_position": 8,
+          "odds_win": 7.1,
+          "odds_place": 2.6,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 7,
+          "horse_name": "馬09-07",
+          "popularity": 15,
+          "finish_position": 11,
+          "odds_win": 7.5,
+          "odds_place": 3.0,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 8,
+          "horse_name": "馬09-08",
+          "popularity": 16,
+          "finish_position": 14,
+          "odds_win": 7.9,
+          "odds_place": 3.2,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 9,
+          "horse_name": "馬09-09",
+          "popularity": 1,
+          "finish_position": 1,
+          "odds_win": 1.9,
+          "odds_place": 1.1,
+          "return_win": 150.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 10,
+          "horse_name": "馬09-10",
+          "popularity": 2,
+          "finish_position": 4,
+          "odds_win": 2.3,
+          "odds_place": 1.4,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 11,
+          "horse_name": "馬09-11",
+          "popularity": 3,
+          "finish_position": 7,
+          "odds_win": 2.7,
+          "odds_place": 1.8,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 12,
+          "horse_name": "馬09-12",
+          "popularity": 4,
+          "finish_position": 10,
+          "odds_win": 3.1,
+          "odds_place": 2.0,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 13,
+          "horse_name": "馬09-13",
+          "popularity": 5,
+          "finish_position": 13,
+          "odds_win": 3.5,
+          "odds_place": 2.3,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 14,
+          "horse_name": "馬09-14",
+          "popularity": 6,
+          "finish_position": 16,
+          "odds_win": 3.9,
+          "odds_place": 2.6,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 15,
+          "horse_name": "馬09-15",
+          "popularity": 7,
+          "finish_position": 3,
+          "odds_win": 4.3,
+          "odds_place": 1.8,
+          "return_win": 0.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 16,
+          "horse_name": "馬09-16",
+          "popularity": 8,
+          "finish_position": 6,
+          "odds_win": 4.7,
+          "odds_place": 2.0,
+          "return_win": 0.0,
+          "return_place": 0.0
+        }
+      ]
+    },
+    {
+      "race_id": "2016-06-12-TOK-10",
+      "date": "2016-06-12",
+      "racecourse": "東京",
+      "distance": 1600,
+      "track_condition": "良",
+      "num_runners": 16,
+      "track_direction": "左",
+      "weather": "晴",
+      "entries": [
+        {
+          "horse_number": 1,
+          "horse_name": "馬10-01",
+          "popularity": 10,
+          "finish_position": 10,
+          "odds_win": 5.5,
+          "odds_place": 2.5,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 2,
+          "horse_name": "馬10-02",
+          "popularity": 11,
+          "finish_position": 13,
+          "odds_win": 5.9,
+          "odds_place": 2.8,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 3,
+          "horse_name": "馬10-03",
+          "popularity": 12,
+          "finish_position": 16,
+          "odds_win": 6.3,
+          "odds_place": 3.1,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 4,
+          "horse_name": "馬10-04",
+          "popularity": 13,
+          "finish_position": 3,
+          "odds_win": 6.7,
+          "odds_place": 2.2,
+          "return_win": 0.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 5,
+          "horse_name": "馬10-05",
+          "popularity": 14,
+          "finish_position": 6,
+          "odds_win": 7.1,
+          "odds_place": 2.5,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 6,
+          "horse_name": "馬10-06",
+          "popularity": 15,
+          "finish_position": 9,
+          "odds_win": 7.5,
+          "odds_place": 2.8,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 7,
+          "horse_name": "馬10-07",
+          "popularity": 16,
+          "finish_position": 12,
+          "odds_win": 7.9,
+          "odds_place": 3.1,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 8,
+          "horse_name": "馬10-08",
+          "popularity": 1,
+          "finish_position": 15,
+          "odds_win": 1.9,
+          "odds_place": 2.2,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 9,
+          "horse_name": "馬10-09",
+          "popularity": 2,
+          "finish_position": 2,
+          "odds_win": 2.3,
+          "odds_place": 1.3,
+          "return_win": 0.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 10,
+          "horse_name": "馬10-10",
+          "popularity": 3,
+          "finish_position": 5,
+          "odds_win": 2.7,
+          "odds_place": 1.6,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 11,
+          "horse_name": "馬10-11",
+          "popularity": 4,
+          "finish_position": 8,
+          "odds_win": 3.1,
+          "odds_place": 1.9,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 12,
+          "horse_name": "馬10-12",
+          "popularity": 5,
+          "finish_position": 11,
+          "odds_win": 3.5,
+          "odds_place": 2.2,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 13,
+          "horse_name": "馬10-13",
+          "popularity": 6,
+          "finish_position": 14,
+          "odds_win": 3.9,
+          "odds_place": 2.5,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 14,
+          "horse_name": "馬10-14",
+          "popularity": 7,
+          "finish_position": 1,
+          "odds_win": 4.3,
+          "odds_place": 1.6,
+          "return_win": 150.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 15,
+          "horse_name": "馬10-15",
+          "popularity": 8,
+          "finish_position": 4,
+          "odds_win": 4.7,
+          "odds_place": 1.9,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 16,
+          "horse_name": "馬10-16",
+          "popularity": 9,
+          "finish_position": 7,
+          "odds_win": 5.1,
+          "odds_place": 2.2,
+          "return_win": 0.0,
+          "return_place": 0.0
+        }
+      ]
+    },
+    {
+      "race_id": "2016-06-12-TOK-11",
+      "date": "2016-06-12",
+      "racecourse": "東京",
+      "distance": 2100,
+      "track_condition": "良",
+      "num_runners": 16,
+      "track_direction": "左",
+      "weather": "晴",
+      "entries": [
+        {
+          "horse_number": 1,
+          "horse_name": "馬11-01",
+          "popularity": 11,
+          "finish_position": 11,
+          "odds_win": 5.9,
+          "odds_place": 2.6,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 2,
+          "horse_name": "馬11-02",
+          "popularity": 12,
+          "finish_position": 14,
+          "odds_win": 6.3,
+          "odds_place": 3.0,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 3,
+          "horse_name": "馬11-03",
+          "popularity": 13,
+          "finish_position": 1,
+          "odds_win": 6.7,
+          "odds_place": 2.0,
+          "return_win": 150.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 4,
+          "horse_name": "馬11-04",
+          "popularity": 14,
+          "finish_position": 4,
+          "odds_win": 7.1,
+          "odds_place": 2.3,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 5,
+          "horse_name": "馬11-05",
+          "popularity": 15,
+          "finish_position": 7,
+          "odds_win": 7.5,
+          "odds_place": 2.6,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 6,
+          "horse_name": "馬11-06",
+          "popularity": 16,
+          "finish_position": 10,
+          "odds_win": 7.9,
+          "odds_place": 3.0,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 7,
+          "horse_name": "馬11-07",
+          "popularity": 1,
+          "finish_position": 13,
+          "odds_win": 1.9,
+          "odds_place": 2.0,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 8,
+          "horse_name": "馬11-08",
+          "popularity": 2,
+          "finish_position": 16,
+          "odds_win": 2.3,
+          "odds_place": 2.3,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 9,
+          "horse_name": "馬11-09",
+          "popularity": 3,
+          "finish_position": 3,
+          "odds_win": 2.7,
+          "odds_place": 1.4,
+          "return_win": 0.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 10,
+          "horse_name": "馬11-10",
+          "popularity": 4,
+          "finish_position": 6,
+          "odds_win": 3.1,
+          "odds_place": 1.8,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 11,
+          "horse_name": "馬11-11",
+          "popularity": 5,
+          "finish_position": 9,
+          "odds_win": 3.5,
+          "odds_place": 2.0,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 12,
+          "horse_name": "馬11-12",
+          "popularity": 6,
+          "finish_position": 12,
+          "odds_win": 3.9,
+          "odds_place": 2.3,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 13,
+          "horse_name": "馬11-13",
+          "popularity": 7,
+          "finish_position": 15,
+          "odds_win": 4.3,
+          "odds_place": 2.6,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 14,
+          "horse_name": "馬11-14",
+          "popularity": 8,
+          "finish_position": 2,
+          "odds_win": 4.7,
+          "odds_place": 1.8,
+          "return_win": 0.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 15,
+          "horse_name": "馬11-15",
+          "popularity": 9,
+          "finish_position": 5,
+          "odds_win": 5.1,
+          "odds_place": 2.0,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 16,
+          "horse_name": "馬11-16",
+          "popularity": 10,
+          "finish_position": 8,
+          "odds_win": 5.5,
+          "odds_place": 2.3,
+          "return_win": 0.0,
+          "return_place": 0.0
+        }
+      ]
+    },
+    {
+      "race_id": "2016-06-12-TOK-12",
+      "date": "2016-06-12",
+      "racecourse": "東京",
+      "distance": 2000,
+      "track_condition": "良",
+      "num_runners": 16,
+      "track_direction": "左",
+      "weather": "晴",
+      "entries": [
+        {
+          "horse_number": 1,
+          "horse_name": "馬12-01",
+          "popularity": 12,
+          "finish_position": 12,
+          "odds_win": 6.3,
+          "odds_place": 2.8,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 2,
+          "horse_name": "馬12-02",
+          "popularity": 13,
+          "finish_position": 15,
+          "odds_win": 6.7,
+          "odds_place": 3.1,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 3,
+          "horse_name": "馬12-03",
+          "popularity": 14,
+          "finish_position": 2,
+          "odds_win": 7.1,
+          "odds_place": 2.2,
+          "return_win": 0.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 4,
+          "horse_name": "馬12-04",
+          "popularity": 15,
+          "finish_position": 5,
+          "odds_win": 7.5,
+          "odds_place": 2.5,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 5,
+          "horse_name": "馬12-05",
+          "popularity": 16,
+          "finish_position": 8,
+          "odds_win": 7.9,
+          "odds_place": 2.8,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 6,
+          "horse_name": "馬12-06",
+          "popularity": 1,
+          "finish_position": 11,
+          "odds_win": 1.9,
+          "odds_place": 1.9,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 7,
+          "horse_name": "馬12-07",
+          "popularity": 2,
+          "finish_position": 14,
+          "odds_win": 2.3,
+          "odds_place": 2.2,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 8,
+          "horse_name": "馬12-08",
+          "popularity": 3,
+          "finish_position": 1,
+          "odds_win": 2.7,
+          "odds_place": 1.3,
+          "return_win": 150.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 9,
+          "horse_name": "馬12-09",
+          "popularity": 4,
+          "finish_position": 4,
+          "odds_win": 3.1,
+          "odds_place": 1.6,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 10,
+          "horse_name": "馬12-10",
+          "popularity": 5,
+          "finish_position": 7,
+          "odds_win": 3.5,
+          "odds_place": 1.9,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 11,
+          "horse_name": "馬12-11",
+          "popularity": 6,
+          "finish_position": 10,
+          "odds_win": 3.9,
+          "odds_place": 2.2,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 12,
+          "horse_name": "馬12-12",
+          "popularity": 7,
+          "finish_position": 13,
+          "odds_win": 4.3,
+          "odds_place": 2.5,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 13,
+          "horse_name": "馬12-13",
+          "popularity": 8,
+          "finish_position": 16,
+          "odds_win": 4.7,
+          "odds_place": 2.8,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 14,
+          "horse_name": "馬12-14",
+          "popularity": 9,
+          "finish_position": 3,
+          "odds_win": 5.1,
+          "odds_place": 1.9,
+          "return_win": 0.0,
+          "return_place": 110.0
+        },
+        {
+          "horse_number": 15,
+          "horse_name": "馬12-15",
+          "popularity": 10,
+          "finish_position": 6,
+          "odds_win": 5.5,
+          "odds_place": 2.2,
+          "return_win": 0.0,
+          "return_place": 0.0
+        },
+        {
+          "horse_number": 16,
+          "horse_name": "馬12-16",
+          "popularity": 11,
+          "finish_position": 9,
+          "odds_win": 5.9,
+          "odds_place": 2.5,
+          "return_win": 0.0,
+          "return_place": 0.0
+        }
+      ]
+    }
+  ]
+}
+### structured-data:end
