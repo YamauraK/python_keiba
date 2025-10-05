@@ -46,7 +46,13 @@ def _parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
         help="Popularity ranks for the upcoming race",
     )
     suggest_parser.add_argument("--budget", type=int, default=10_000, help="Total budget in yen")
-    suggest_parser.add_argument("--num-tickets", dest="num_tickets", type=int, default=10, help="Number of tickets to buy")
+    suggest_parser.add_argument(
+        "--num-tickets",
+        dest="num_tickets",
+        type=int,
+        default=10,
+        help="Number of trifecta tickets to buy",
+    )
     suggest_parser.add_argument("--db-path", type=Path, default=None, help="Path to the SQLite database")
 
     return parser.parse_args(argv)
@@ -88,8 +94,9 @@ def main(argv: Optional[List[str]] = None) -> int:
         )
         for rec in recommendations:
             print(
-                f"{rec.horse_label} (popularity {rec.popularity_rank}): "
-                f"bet {rec.suggested_bet_amount:.0f}円 -> expected return {rec.expected_return_per_ticket:.0f}円"
+                f"Combination {rec.combination_label}: "
+                f"bet {rec.suggested_bet_amount:.0f}円, "
+                f"hit rate {rec.hit_rate * 100:.1f}% -> expected return {rec.expected_return_per_ticket:.0f}円"
             )
         return 0
 
