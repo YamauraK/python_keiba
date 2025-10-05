@@ -7,7 +7,7 @@ from pathlib import Path
 from typing import List, Optional
 
 from .analysis import recommend_bets
-from .data_loader import DataValidationError, ingest_file
+from .data_loader import DataValidationError, ingest_path
 from .database import DB_PATH_DEFAULT, initialize_database
 
 
@@ -19,8 +19,16 @@ def _parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
     init_parser.add_argument("--db-path", type=Path, default=None, help="Path to the SQLite database")
 
     ingest_parser = subparsers.add_parser("ingest", help="Load a race data file into the database")
-    ingest_parser.add_argument("data_path", type=Path, help="Path to the CSV or structured text file")
+    ingest_parser.add_argument(
+        "data_path", type=Path, help="Path to the data file or directory"
+    )
     ingest_parser.add_argument("--db-path", type=Path, default=None, help="Path to the SQLite database")
+    ingest_parser.add_argument(
+        "--recursive",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Recursively traverse directories when ingesting (default: enabled)",
+    )
 
     suggest_parser = subparsers.add_parser("suggest", help="Generate bet recommendations")
     suggest_parser.add_argument("--racecourse", type=str, default=None)
@@ -54,7 +62,11 @@ def main(argv: Optional[List[str]] = None) -> int:
 
     if args.command == "ingest":
         try:
-            races, entries = ingest_file(args.data_path, db_path=args.db_path)
+            races, entries = ingest_path(
+                args.data_path,
+                db_path=args.db_path,
+                recursive=args.recursive,
+            )
         except DataValidationError as exc:
             print(f"Validation failed: {exc}")
             return 1

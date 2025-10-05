@@ -12,6 +12,8 @@ from .database import DB_PATH_DEFAULT, bulk_insert, get_connection, initialize_d
 STRUCTURED_BLOCK_START = "### structured-data:start"
 STRUCTURED_BLOCK_END = "### structured-data:end"
 
+SUPPORTED_EXTENSIONS = {".csv", ".txt"}
+
 REQUIRED_COLUMNS = {
     "race_id",
     "date",
@@ -280,4 +282,42 @@ def ingest_file(path: Path | str, db_path: Path | str | None = None) -> Tuple[in
     raise DataValidationError(
         f"Unsupported data file extension: '{suffix or '<none>'}'"
     )
+
+
+def ingest_path(
+    path: Path | str, *, db_path: Path | str | None = None, recursive: bool = True
+) -> Tuple[int, int]:
+    """Load a file or directory of race data into the SQLite database."""
+
+    target = Path(path)
+    if not target.exists():
+        raise FileNotFoundError(target)
+
+    if target.is_file():
+        return ingest_file(target, db_path)
+
+    if not target.is_dir():
+        raise DataValidationError(f"Path is neither file nor directory: {target}")
+
+    candidates = target.rglob("*") if recursive else target.glob("*")
+    files = sorted(
+        file
+        for file in candidates
+        if file.is_file() and file.suffix.lower() in SUPPORTED_EXTENSIONS
+    )
+
+    if not files:
+        raise DataValidationError(
+            f"Directory '{target}' does not contain CSV or TXT race data files"
+        )
+
+    total_races = 0
+    total_entries = 0
+
+    for file in files:
+        races, entries = ingest_file(file, db_path)
+        total_races += races
+        total_entries += entries
+
+    return total_races, total_entries
 
