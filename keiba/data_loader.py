@@ -33,6 +33,8 @@ REQUIRED_COLUMNS = {
     "return_place",
 }
 
+OPTIONAL_RACE_COLUMNS = {"surface", "track_surface"}
+
 
 class DataValidationError(Exception):
     """Raised when the ingested data does not match expectations."""
@@ -92,6 +94,24 @@ def _normalize_sex_category(value: str | None) -> str:
     return "mixed"
 
 
+def _normalize_surface(value: str | None) -> str:
+    normalized = (value or "").strip().lower()
+    if not normalized:
+        return "unknown"
+    mappings = {
+        "芝": "turf",
+        "芝コース": "turf",
+        "芝コート": "turf",
+        "grass": "turf",
+        "turf": "turf",
+        "ダート": "dirt",
+        "dirt": "dirt",
+        "砂": "dirt",
+        "土": "dirt",
+    }
+    return mappings.get(normalized, "unknown")
+
+
 def ingest_csv(csv_path: Path | str, db_path: Path | str | None = None) -> Tuple[int, int]:
     """Load a CSV file into the SQLite database."""
 
@@ -109,6 +129,12 @@ def ingest_csv(csv_path: Path | str, db_path: Path | str | None = None) -> Tuple
             raise DataValidationError("CSV file does not contain headers")
         _validate_columns(reader.fieldnames)
 
+        surface_column = None
+        for candidate in OPTIONAL_RACE_COLUMNS:
+            if candidate in reader.fieldnames:
+                surface_column = candidate
+                break
+
         race_records: Dict[str, Dict[str, object]] = {}
         entry_records: List[Dict[str, object]] = []
 
@@ -120,6 +146,9 @@ def ingest_csv(csv_path: Path | str, db_path: Path | str | None = None) -> Tuple
                 "racecourse": row["racecourse"].strip(),
                 "distance": _cast_int(row, "distance"),
                 "track_condition": row["track_condition"].strip(),
+                "surface": _normalize_surface(
+                    row.get(surface_column) if surface_column else None
+                ),
                 "num_runners": _cast_int(row, "num_runners"),
                 "track_direction": row["track_direction"].strip(),
                 "weather": row["weather"].strip(),
@@ -144,10 +173,10 @@ def ingest_csv(csv_path: Path | str, db_path: Path | str | None = None) -> Tuple
             conn,
             """
             INSERT OR REPLACE INTO races (
-                race_id, date, racecourse, distance, track_condition,
+                race_id, date, racecourse, distance, track_condition, surface,
                 num_runners, track_direction, weather, sex_category
             ) VALUES (
-                :race_id, :date, :racecourse, :distance, :track_condition,
+                :race_id, :date, :racecourse, :distance, :track_condition, :surface,
                 :num_runners, :track_direction, :weather, :sex_category
             );
             """,
@@ -201,6 +230,11 @@ def ingest_txt(txt_path: Path | str, db_path: Path | str | None = None) -> Tuple
                 "racecourse": str(race["racecourse"]).strip(),
                 "distance": int(race["distance"]),
                 "track_condition": str(race["track_condition"]).strip(),
+                "surface": _normalize_surface(
+                    str(race.get("surface") or race.get("track_surface"))
+                    if ("surface" in race or "track_surface" in race)
+                    else None
+                ),
                 "num_runners": int(race["num_runners"]),
                 "track_direction": str(race["track_direction"]).strip(),
                 "weather": str(race["weather"]).strip(),
@@ -255,10 +289,10 @@ def ingest_txt(txt_path: Path | str, db_path: Path | str | None = None) -> Tuple
             conn,
             """
             INSERT OR REPLACE INTO races (
-                race_id, date, racecourse, distance, track_condition,
+                race_id, date, racecourse, distance, track_condition, surface,
                 num_runners, track_direction, weather, sex_category
             ) VALUES (
-                :race_id, :date, :racecourse, :distance, :track_condition,
+                :race_id, :date, :racecourse, :distance, :track_condition, :surface,
                 :num_runners, :track_direction, :weather, :sex_category
             );
             """,

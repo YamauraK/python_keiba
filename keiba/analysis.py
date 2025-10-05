@@ -32,6 +32,7 @@ def _build_filters(
     racecourse: Optional[str],
     distance: Optional[int],
     track_condition: Optional[str],
+    surface: Optional[str],
     num_runners: Optional[int],
     track_direction: Optional[str],
     weather: Optional[str],
@@ -49,6 +50,7 @@ def _build_filters(
     add("racecourse", racecourse)
     add("distance", distance)
     add("track_condition", track_condition)
+    add("surface", surface)
     add("num_runners", num_runners)
     add("track_direction", track_direction)
     add("weather", weather)
@@ -63,6 +65,7 @@ def _fetch_trifecta_statistics(
     racecourse: Optional[str] = None,
     distance: Optional[int] = None,
     track_condition: Optional[str] = None,
+    surface: Optional[str] = None,
     num_runners: Optional[int] = None,
     track_direction: Optional[str] = None,
     weather: Optional[str] = None,
@@ -80,6 +83,7 @@ def _fetch_trifecta_statistics(
         racecourse=racecourse,
         distance=distance,
         track_condition=track_condition,
+        surface=surface,
         num_runners=num_runners,
         track_direction=track_direction,
         weather=weather,
@@ -174,6 +178,7 @@ def recommend_bets(
     racecourse: Optional[str] = None,
     distance: Optional[int] = None,
     track_condition: Optional[str] = None,
+    surface: Optional[str] = None,
     num_runners: Optional[int] = None,
     track_direction: Optional[str] = None,
     weather: Optional[str] = None,
@@ -192,6 +197,7 @@ def recommend_bets(
         racecourse=racecourse,
         distance=distance,
         track_condition=track_condition,
+        surface=surface,
         num_runners=num_runners,
         track_direction=track_direction,
         weather=weather,

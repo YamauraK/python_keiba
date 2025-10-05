@@ -34,16 +34,16 @@ def _parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
     suggest_parser.add_argument("--racecourse", type=str, default=None)
     suggest_parser.add_argument("--distance", type=int, default=None)
     suggest_parser.add_argument("--track-condition", dest="track_condition", type=str, default=None)
+    suggest_parser.add_argument(
+        "--surface",
+        type=str,
+        choices=["turf", "dirt", "芝", "ダート", "unknown"],
+        default=None,
+        help="Track surface (芝 / ダート).",
+    )
     suggest_parser.add_argument("--num-runners", dest="num_runners", type=int, default=None)
     suggest_parser.add_argument("--track-direction", dest="track_direction", type=str, default=None)
     suggest_parser.add_argument("--weather", type=str, default=None)
-    suggest_parser.add_argument(
-        "--race-sex",
-        dest="race_sex",
-        choices=["male", "female", "mixed"],
-        default="mixed",
-        help="Sex restriction for the upcoming race (male / female / mixed)",
-    )
     suggest_parser.add_argument("--budget", type=int, default=10_000, help="Total budget in yen")
     suggest_parser.add_argument(
         "--num-tickets",
@@ -79,15 +79,19 @@ def main(argv: Optional[List[str]] = None) -> int:
         return 0
 
     if args.command == "suggest":
+        surface = args.surface
+        if surface in {"芝", "ダート"}:
+            surface = "turf" if surface == "芝" else "dirt"
+
         recommendations = recommend_bets(
             db_path=args.db_path,
             racecourse=args.racecourse,
             distance=args.distance,
             track_condition=args.track_condition,
+            surface=surface,
             num_runners=args.num_runners,
             track_direction=args.track_direction,
             weather=args.weather,
-            race_sex=args.race_sex,
             budget=args.budget,
             num_tickets=args.num_tickets,
         )

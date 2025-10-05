@@ -45,6 +45,7 @@ def initialize_database(db_path: Path | str | None = None) -> None:
                 racecourse TEXT,
                 distance INTEGER,
                 track_condition TEXT,
+                surface TEXT DEFAULT 'unknown',
                 num_runners INTEGER,
                 track_direction TEXT,
                 weather TEXT,
@@ -78,6 +79,11 @@ def initialize_database(db_path: Path | str | None = None) -> None:
             cursor.execute("ALTER TABLE races ADD COLUMN sex_category TEXT")
             cursor.execute(
                 "UPDATE races SET sex_category = 'mixed' WHERE sex_category IS NULL"
+            )
+        if "surface" not in existing_columns:
+            cursor.execute("ALTER TABLE races ADD COLUMN surface TEXT")
+            cursor.execute(
+                "UPDATE races SET surface = 'unknown' WHERE surface IS NULL"
             )
 
 
